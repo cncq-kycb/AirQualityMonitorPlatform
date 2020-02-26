@@ -1,4 +1,4 @@
-# MonitorPlatform
+# Air Quality Monitor Platform
 ### 基于 Django + Scrapy 框架实现的空气质量监测系统
 An air quality monitor platform based on Django frame. Related data are crawled by Scrapy on [PM25](http://pm25.in/)  
 
