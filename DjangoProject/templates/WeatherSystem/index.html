@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    	<title>空气质量监测平台</title>
+    
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../static/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="../static/css/fontAwesome.css">
+        <link rel="stylesheet" href="../static/css/hero-slider.css">
+        <link rel="stylesheet" href="../static/css/owl-carousel.css">
+        <link rel="stylesheet" href="../static/css/datepicker.css">
+        <link rel="stylesheet" href="../static/css/tooplate-style.css">
+
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+
+        <script src="../static/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+
+<body>
+	<div class="tabs-content" id="recommended-hotel">
+		<div class="container">
+			<div class="col-md-12">
+				<div class="section-heading" >
+					<h1 align="center">空气质量监测平台</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+    <div class="tabs-content" id="recommended-hotel">
+        <div class="container">
+			<div class="col-md-12">
+				<div class="section-heading">
+					<h2>空气质量排名</h2>
+				</div>
+			</div>
+            <div class="row">
+                <div class="wrapper">
+                    <div class="col-md-12">
+                        <div class="weather-content">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <section id="second-tab-group" class="weathergroup">
+                                        <div id="monday">
+                                            <div class="row">
+                                                {% for item in sort_list %}
+                                                <div class="col-md-4">
+                                                    <div class="weather-item">
+														    <ul class="time-weather">
+                                                            <h3>{{ item.city_name }}</h3><br />
+                                                            <li>AQI <span>{{ item.aqi }}</span></li>
+                                                            <li>PM2.5 <span>{{ item.pm25 }}</span></li>
+                                                            <li>PM10 <span>{{ item.pm10 }}</span></li>
+                                                            <li>CO <span>{{ item.co }}</span></li>
+															<li>NO2 <span>{{ item.no2 }}</span></li>
+                                                            <li>O3/h <span>{{ item.o31h }}</span></li>
+                                                            <li>O3/8h <span>{{ item.o38h }}</span></li>
+															<li>SO2 <span>{{ item.so2 }}</span></li>
+                                                        </ul>
+                                                        <br />
+	                                                    </div>
+                                                </div>
+                                                {% endfor %}
+                                            </div>
+                                        </div>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	
+    <div class="tabs-content" id="recommended-hotel">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-heading">
+                        <h2>查看历史空气质量</h2>
+                    </div>
+                </div>
+                <section class="services">
+                    <div class="container">
+						    <div class="row">
+								<center>
+                                <form action="search" method="post">
+                                    {% csrf_token %}
+                                    {{ form }}
+                                    <input type="submit" value="查询"><br />
+                                </form>
+								</center>
+						    </div><br />
+
+                            <div class="col-md-32">
+                                <div>
+                                    <a href={{ img }} target="_black">
+                                    <img src= {{ img }} alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="primary-button">
+                        <a href="#" class="scroll-top">返回顶层</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+
+    <script>window.jQuery || document.write('<script src="../static/js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+    <script src="../static/js/vendor/bootstrap.min.js"></script>
+    
+    <script src="../static/js/datepicker.js"></script>
+    <script src="../static/js/plugins.js"></script>
+    <script src="../static/js/main.js"></script>
+
+</body>
+</html>

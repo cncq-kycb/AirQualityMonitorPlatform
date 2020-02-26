@@ -1,0 +1,9 @@
+#coding:utf-8
+#端口号
+HOST='localhost'
+#用户名
+USER='root'
+#密码
+PASSWORD='wangbo1012'
+#数据库
+DATABASE='django_data'
