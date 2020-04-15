@@ -14,8 +14,8 @@ class AirQuality(models.Model):
     pm10 = models.IntegerField()
     co = models.FloatField(max_length=5)
     no2 = models.IntegerField()
-    o31h = models.IntegerField()
-    o38h = models.IntegerField()
+    o3 = models.IntegerField()
+    co = models.IntegerField()
     so2 = models.IntegerField()
     record_date = models.DateTimeField()
 
@@ -26,8 +26,8 @@ class CitySort(models.Model):
     pm10 = models.IntegerField()
     co = models.FloatField(max_length=5)
     no2 = models.IntegerField()
-    o31h = models.IntegerField()
-    o38h = models.IntegerField()
+    o3 = models.IntegerField()
+    co = models.IntegerField()
     so2 = models.IntegerField()
     class Meta:
         managed = False

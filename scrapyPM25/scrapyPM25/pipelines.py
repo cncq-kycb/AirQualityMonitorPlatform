@@ -18,9 +18,9 @@ class Scrapypm25Pipeline(object):
     def process_item(self, item, spider):
         
         insert_sql = """
-        insert into WeatherSystem_airquality (city_name,record_date,aqi,pm25,pm10,co,no2,o31h,o38h,so2) VALUES(%s,now(),%s,%s,%s,%s,%s,%s,%s,%s)
+        insert into WeatherSystem_airquality (city_name,record_date,aqi,pm25,pm10,co,no2,o3,so2) VALUES(%s,now(),%s,%s,%s,%s,%s,%s,%s)
         """
-        self.cursor.execute(insert_sql, (item['city_name'],item['aqi'],item['pm25'],item['pm10'],item['co'],item['no2'],item['o31h'],item['o38h'],item['so2']))
+        self.cursor.execute(insert_sql, (item['city_name'].replace('市',''),item['aqi'],item['pm25'],item['pm10'],item['co'],item['no2'],item['o3'],item['so2']))
 
         self.connect.commit()
         return item

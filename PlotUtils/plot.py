@@ -20,31 +20,33 @@ def plot(city_name):
     y_aqi = []
     y_pm25 = []
     y_pm10 = []
+    y_co = []
     y_no2 = []
-    y_o31h = []
-    y_o38h = []
+    y_o3 = []
     y_so2 = []
     city_id = []
+    if results == None:
+        return
     #保存选择城市近期数据
     for row in results:
-        x.append(row[9])
+        x.append(row[8])
         y_aqi.append(row[1])
         y_pm25.append(row[2])
         y_pm10.append(row[3])
+        y_co.append(row[4])
         y_no2.append(row[5])
-        y_o31h.append(row[6])
-        y_o38h.append(row[7])
-        y_so2.append(row[8])
-        city_id.append(row[10])
+        y_o3.append(row[6])
+        y_so2.append(row[7])
+        city_id.append(row[9])
     db.close()
     #画图
     plt.figure(num=3, figsize=(20, 10),)
     plt.plot(x,y_aqi, color='green', linewidth=1.0, linestyle='-',label='AQI')
     plt.plot(x,y_pm25, color='purple', linewidth=1.0, linestyle='-',label='PM2.5')
     plt.plot(x,y_pm10, color='black', linewidth=1.0, linestyle='-',label='PM10')
+    plt.plot(x,y_co, color='blue', linewidth=1.0, linestyle='-',label='CO')
     plt.plot(x,y_no2, color='red', linewidth=1.0, linestyle='-',label='NO2')
-    plt.plot(x,y_o31h, color='pink', linewidth=1.0, linestyle='-',label='O3/h')
-    plt.plot(x,y_o38h, color='blue', linewidth=1.0, linestyle='-',label='O3/8h')
+    plt.plot(x,y_o3, color='pink', linewidth=1.0, linestyle='-',label='O3')
     plt.plot(x,y_so2, color='orange', linewidth=1.0, linestyle='-',label='SO2')
     #设置坐标轴与图例等
     plt.gca().xaxis.set_major_formatter(mdates.DateFormatter('%m/%d/%Y'))

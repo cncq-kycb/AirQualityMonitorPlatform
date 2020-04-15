@@ -11,12 +11,22 @@ import scrapy
 class Scrapypm25Item(scrapy.Item):
     # define the fields for your item here like:
 
+    # city_name = scrapy.Field()
+    # aqi = scrapy.Field()
+    # pm25 = scrapy.Field()
+    # pm10 = scrapy.Field()
+    # co = scrapy.Field()
+    # no2 = scrapy.Field()
+    # o31h = scrapy.Field()
+    # o38h = scrapy.Field()
+    # so2 = scrapy.Field()
+
+    # new field
     city_name = scrapy.Field()
     aqi = scrapy.Field()
-    pm25 = scrapy.Field()
-    pm10 = scrapy.Field()
     co = scrapy.Field()
     no2 = scrapy.Field()
-    o31h = scrapy.Field()
-    o38h = scrapy.Field()
+    o3 = scrapy.Field()
+    pm10 = scrapy.Field()
     so2 = scrapy.Field()
+    pm25 = scrapy.Field()
