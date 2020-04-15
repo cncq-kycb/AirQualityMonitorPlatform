@@ -1,7 +1,7 @@
 /*
  Navicat Premium Data Transfer
 
- Source Server         : AlbertoWang
+ Source Server         : fvck
  Source Server Type    : MySQL
  Source Server Version : 50727
  Source Host           : localhost:3306
@@ -11,7 +11,7 @@
  Target Server Version : 50727
  File Encoding         : 65001
 
- Date: 26/02/2020 16:58:09
+ Date: 15/04/2020 20:09:04
 */
 
 SET NAMES utf8mb4;
@@ -29,13 +29,96 @@ CREATE TABLE `WeatherSystem_airquality` (
   `pm10` int(11) NOT NULL,
   `co` double NOT NULL,
   `no2` int(11) NOT NULL,
-  `o31h` int(11) NOT NULL,
+  `o3` int(11) NOT NULL,
   `so2` int(11) NOT NULL,
   `record_date` datetime(6) NOT NULL,
-  `o38h` int(11) NOT NULL,
   PRIMARY KEY (`id`),
   KEY `WeatherSystem_airquality_city_name_7394b9ed` (`city_name`)
-) ENGINE=InnoDB AUTO_INCREMENT=852 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=1652 DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of WeatherSystem_airquality
+-- ----------------------------
+BEGIN;
+INSERT INTO `WeatherSystem_airquality` VALUES (1574, '北京', 104, 77, 97, 0.5, 33, 81, 8, '2020-04-15 19:55:57.000000');
+INSERT INTO `WeatherSystem_airquality` VALUES (1575, '长春', 484, 764, 102, 2.8, 133, 97, 32, '2020-04-15 19:55:58.000000');
+INSERT INTO `WeatherSystem_airquality` VALUES (1576, '长沙', 48, 28, 52, 0.8, 25, 87, 16, '2020-04-15 19:55:58.000000');
+INSERT INTO `WeatherSystem_airquality` VALUES (1577, '重庆', 49, 35, 51, 0.7, 44, 80, 11, '2020-04-15 19:55:58.000000');
+INSERT INTO `WeatherSystem_airquality` VALUES (1578, '贵阳', 53, 28, 55, 0.6, 14, 96, 10, '2020-04-15 19:55:58.000000');
+INSERT INTO `WeatherSystem_airquality` VALUES (1579, '哈尔滨', 52, 16, 74, 0.4, 16, 94, 11, '2020-04-15 19:55:58.000000');
+INSERT INTO `WeatherSystem_airquality` VALUES (1580, '海口', 43, 18, 38, 0.4, 10, 107, 4, '2020-04-15 19:55:58.000000');
+INSERT INTO `WeatherSystem_airquality` VALUES (1581, '合肥', 46, 31, 61, 0.5, 39, 74, 9, '2020-04-15 19:55:58.000000');
+INSERT INTO `WeatherSystem_airquality` VALUES (1582, '呼和浩特', 84, 25, 146, 0.5, 8, 85, 6, '2020-04-15 19:55:59.000000');
+INSERT INTO `WeatherSystem_airquality` VALUES (1583, '济南', 69, 39, 66, 0.6, 17, 164, 10, '2020-04-15 19:55:59.000000');
+INSERT INTO `WeatherSystem_airquality` VALUES (1584, '昆明', 45, 29, 61, 0.8, 23, 88, 12, '2020-04-15 19:55:59.000000');
+INSERT INTO `WeatherSystem_airquality` VALUES (1585, '兰州', 120, 41, 171, 1.3, 41, 106, 34, '2020-04-15 19:55:59.000000');
+INSERT INTO `WeatherSystem_airquality` VALUES (1586, '南京', 53, 26, 66, 0.7, 26, 114, 16, '2020-04-15 19:55:59.000000');
+INSERT INTO `WeatherSystem_airquality` VALUES (1587, '南宁', 75, 51, 91, 0.6, 28, 114, 21, '2020-04-15 19:55:59.000000');
+INSERT INTO `WeatherSystem_airquality` VALUES (1588, '盘锦', 87, 62, 84, 0.7, 21, 180, 12, '2020-04-15 19:55:59.000000');
+INSERT INTO `WeatherSystem_airquality` VALUES (1589, '上海', 51, 55, 39, 0.6, 41, 97, 7, '2020-04-15 19:56:00.000000');
+INSERT INTO `WeatherSystem_airquality` VALUES (1590, '沈阳', 84, 54, 86, 0.5, 20, 171, 10, '2020-04-15 19:56:00.000000');
+INSERT INTO `WeatherSystem_airquality` VALUES (1591, '石家庄', 99, 83, 123, 1, 48, 90, 23, '2020-04-15 19:56:00.000000');
+INSERT INTO `WeatherSystem_airquality` VALUES (1592, '太原', 129, 91, 168, 1.1, 48, 93, 24, '2020-04-15 19:56:00.000000');
+INSERT INTO `WeatherSystem_airquality` VALUES (1593, '天津', 76, 53, 74, 0.6, 23, 128, 11, '2020-04-15 19:56:00.000000');
+INSERT INTO `WeatherSystem_airquality` VALUES (1594, '武汉', 43, 28, 47, 0.7, 20, 110, 16, '2020-04-15 19:56:00.000000');
+INSERT INTO `WeatherSystem_airquality` VALUES (1595, '乌鲁木齐', 47, 17, 43, 0.5, 18, 71, 10, '2020-04-15 19:56:00.000000');
+INSERT INTO `WeatherSystem_airquality` VALUES (1596, '西安', 88, 52, 133, 0.7, 66, 44, 13, '2020-04-15 19:56:01.000000');
+INSERT INTO `WeatherSystem_airquality` VALUES (1597, '西宁', 74, 38, 114, 1.2, 32, 64, 28, '2020-04-15 19:56:01.000000');
+INSERT INTO `WeatherSystem_airquality` VALUES (1598, '银川', 112, 29, 168, 0.5, 12, 77, 12, '2020-04-15 19:56:01.000000');
+INSERT INTO `WeatherSystem_airquality` VALUES (1599, '郑州', 63, 34, 76, 0.5, 24, 110, 12, '2020-04-15 19:56:01.000000');
+INSERT INTO `WeatherSystem_airquality` VALUES (1600, '北京', 104, 77, 97, 0.5, 33, 81, 8, '2020-04-15 19:58:17.000000');
+INSERT INTO `WeatherSystem_airquality` VALUES (1601, '长春', 484, 764, 102, 2.8, 133, 97, 32, '2020-04-15 19:58:18.000000');
+INSERT INTO `WeatherSystem_airquality` VALUES (1602, '长沙', 48, 28, 52, 0.8, 25, 87, 16, '2020-04-15 19:58:18.000000');
+INSERT INTO `WeatherSystem_airquality` VALUES (1603, '重庆', 49, 35, 51, 0.7, 44, 80, 11, '2020-04-15 19:58:18.000000');
+INSERT INTO `WeatherSystem_airquality` VALUES (1604, '贵阳', 53, 28, 55, 0.6, 14, 96, 10, '2020-04-15 19:58:18.000000');
+INSERT INTO `WeatherSystem_airquality` VALUES (1605, '哈尔滨', 52, 16, 74, 0.4, 16, 94, 11, '2020-04-15 19:58:18.000000');
+INSERT INTO `WeatherSystem_airquality` VALUES (1606, '海口', 43, 18, 38, 0.4, 10, 107, 4, '2020-04-15 19:58:18.000000');
+INSERT INTO `WeatherSystem_airquality` VALUES (1607, '合肥', 46, 31, 61, 0.5, 39, 74, 9, '2020-04-15 19:58:18.000000');
+INSERT INTO `WeatherSystem_airquality` VALUES (1608, '呼和浩特', 84, 25, 146, 0.5, 8, 85, 6, '2020-04-15 19:58:19.000000');
+INSERT INTO `WeatherSystem_airquality` VALUES (1609, '济南', 69, 39, 66, 0.6, 17, 164, 10, '2020-04-15 19:58:19.000000');
+INSERT INTO `WeatherSystem_airquality` VALUES (1610, '昆明', 45, 29, 61, 0.8, 23, 88, 12, '2020-04-15 19:58:19.000000');
+INSERT INTO `WeatherSystem_airquality` VALUES (1611, '兰州', 120, 41, 171, 1.3, 41, 106, 34, '2020-04-15 19:58:19.000000');
+INSERT INTO `WeatherSystem_airquality` VALUES (1612, '南京', 53, 26, 66, 0.7, 26, 114, 16, '2020-04-15 19:58:19.000000');
+INSERT INTO `WeatherSystem_airquality` VALUES (1613, '南宁', 75, 51, 91, 0.6, 28, 114, 21, '2020-04-15 19:58:19.000000');
+INSERT INTO `WeatherSystem_airquality` VALUES (1614, '盘锦', 87, 62, 84, 0.7, 21, 180, 12, '2020-04-15 19:58:20.000000');
+INSERT INTO `WeatherSystem_airquality` VALUES (1615, '上海', 51, 55, 39, 0.6, 41, 97, 7, '2020-04-15 19:58:20.000000');
+INSERT INTO `WeatherSystem_airquality` VALUES (1616, '沈阳', 155, 108, 149, 1, 32, 157, 20, '2020-04-15 19:58:20.000000');
+INSERT INTO `WeatherSystem_airquality` VALUES (1617, '石家庄', 99, 83, 123, 1, 48, 90, 23, '2020-04-15 19:58:20.000000');
+INSERT INTO `WeatherSystem_airquality` VALUES (1618, '太原', 129, 91, 168, 1.1, 48, 93, 24, '2020-04-15 19:58:20.000000');
+INSERT INTO `WeatherSystem_airquality` VALUES (1619, '天津', 76, 53, 74, 0.6, 23, 128, 11, '2020-04-15 19:58:20.000000');
+INSERT INTO `WeatherSystem_airquality` VALUES (1620, '武汉', 52, 31, 60, 1, 38, 65, 20, '2020-04-15 19:58:20.000000');
+INSERT INTO `WeatherSystem_airquality` VALUES (1621, '乌鲁木齐', 47, 17, 43, 0.5, 18, 71, 10, '2020-04-15 19:58:21.000000');
+INSERT INTO `WeatherSystem_airquality` VALUES (1622, '西安', 88, 52, 133, 0.7, 66, 44, 13, '2020-04-15 19:58:21.000000');
+INSERT INTO `WeatherSystem_airquality` VALUES (1623, '西宁', 74, 38, 114, 1.2, 32, 64, 28, '2020-04-15 19:58:21.000000');
+INSERT INTO `WeatherSystem_airquality` VALUES (1624, '银川', 112, 29, 168, 0.5, 12, 77, 12, '2020-04-15 19:58:21.000000');
+INSERT INTO `WeatherSystem_airquality` VALUES (1625, '郑州', 63, 34, 76, 0.5, 24, 110, 12, '2020-04-15 19:58:21.000000');
+INSERT INTO `WeatherSystem_airquality` VALUES (1626, '北京', 104, 77, 97, 0.5, 33, 81, 8, '2020-04-15 19:58:32.000000');
+INSERT INTO `WeatherSystem_airquality` VALUES (1627, '长春', 484, 764, 102, 2.8, 133, 97, 32, '2020-04-15 19:58:32.000000');
+INSERT INTO `WeatherSystem_airquality` VALUES (1628, '长沙', 48, 28, 52, 0.8, 25, 87, 16, '2020-04-15 19:58:32.000000');
+INSERT INTO `WeatherSystem_airquality` VALUES (1629, '重庆', 49, 35, 51, 0.7, 44, 80, 11, '2020-04-15 19:58:32.000000');
+INSERT INTO `WeatherSystem_airquality` VALUES (1630, '贵阳', 53, 28, 55, 0.6, 14, 96, 10, '2020-04-15 19:58:32.000000');
+INSERT INTO `WeatherSystem_airquality` VALUES (1631, '哈尔滨', 52, 16, 74, 0.4, 16, 94, 11, '2020-04-15 19:58:32.000000');
+INSERT INTO `WeatherSystem_airquality` VALUES (1632, '海口', 43, 18, 38, 0.4, 10, 107, 4, '2020-04-15 19:58:32.000000');
+INSERT INTO `WeatherSystem_airquality` VALUES (1633, '合肥', 46, 31, 61, 0.5, 39, 74, 9, '2020-04-15 19:58:33.000000');
+INSERT INTO `WeatherSystem_airquality` VALUES (1634, '呼和浩特', 84, 25, 146, 0.5, 8, 85, 6, '2020-04-15 19:58:33.000000');
+INSERT INTO `WeatherSystem_airquality` VALUES (1635, '济南', 69, 39, 66, 0.6, 17, 164, 10, '2020-04-15 19:58:33.000000');
+INSERT INTO `WeatherSystem_airquality` VALUES (1636, '昆明', 45, 29, 61, 0.8, 23, 88, 12, '2020-04-15 19:58:33.000000');
+INSERT INTO `WeatherSystem_airquality` VALUES (1637, '兰州', 120, 41, 171, 1.3, 41, 106, 34, '2020-04-15 19:58:33.000000');
+INSERT INTO `WeatherSystem_airquality` VALUES (1638, '南京', 53, 26, 66, 0.7, 26, 114, 16, '2020-04-15 19:58:33.000000');
+INSERT INTO `WeatherSystem_airquality` VALUES (1639, '南宁', 75, 51, 91, 0.6, 28, 114, 21, '2020-04-15 19:58:33.000000');
+INSERT INTO `WeatherSystem_airquality` VALUES (1640, '盘锦', 87, 62, 84, 0.7, 21, 180, 12, '2020-04-15 19:58:34.000000');
+INSERT INTO `WeatherSystem_airquality` VALUES (1641, '上海', 51, 55, 39, 0.6, 41, 97, 7, '2020-04-15 19:58:34.000000');
+INSERT INTO `WeatherSystem_airquality` VALUES (1642, '沈阳', 155, 108, 149, 1, 32, 157, 20, '2020-04-15 19:58:34.000000');
+INSERT INTO `WeatherSystem_airquality` VALUES (1643, '石家庄', 99, 83, 123, 1, 48, 90, 23, '2020-04-15 19:58:34.000000');
+INSERT INTO `WeatherSystem_airquality` VALUES (1644, '太原', 129, 91, 168, 1.1, 48, 93, 24, '2020-04-15 19:58:34.000000');
+INSERT INTO `WeatherSystem_airquality` VALUES (1645, '天津', 76, 53, 74, 0.6, 23, 128, 11, '2020-04-15 19:58:34.000000');
+INSERT INTO `WeatherSystem_airquality` VALUES (1646, '武汉', 52, 31, 60, 1, 38, 65, 20, '2020-04-15 19:58:34.000000');
+INSERT INTO `WeatherSystem_airquality` VALUES (1647, '乌鲁木齐', 47, 17, 43, 0.5, 18, 71, 10, '2020-04-15 19:58:34.000000');
+INSERT INTO `WeatherSystem_airquality` VALUES (1648, '西安', 88, 52, 133, 0.7, 66, 44, 13, '2020-04-15 19:58:35.000000');
+INSERT INTO `WeatherSystem_airquality` VALUES (1649, '西宁', 74, 38, 114, 1.2, 32, 64, 28, '2020-04-15 19:58:35.000000');
+INSERT INTO `WeatherSystem_airquality` VALUES (1650, '银川', 112, 29, 168, 0.5, 12, 77, 12, '2020-04-15 19:58:35.000000');
+INSERT INTO `WeatherSystem_airquality` VALUES (1651, '郑州', 63, 34, 76, 0.5, 24, 110, 12, '2020-04-15 19:58:35.000000');
+COMMIT;
 
 -- ----------------------------
 -- Table structure for WeatherSystem_city
@@ -79,17 +162,7 @@ INSERT INTO `WeatherSystem_city` VALUES (22, '海口', 'haikou');
 INSERT INTO `WeatherSystem_city` VALUES (23, '贵阳', 'guiyang');
 INSERT INTO `WeatherSystem_city` VALUES (24, '昆明', 'kunming');
 INSERT INTO `WeatherSystem_city` VALUES (25, '南宁', 'nanning');
-INSERT INTO `WeatherSystem_city` VALUES (26, '拉萨', 'lasa');
-INSERT INTO `WeatherSystem_city` VALUES (27, '杭州', 'hangzhou');
-INSERT INTO `WeatherSystem_city` VALUES (28, '南昌', 'nanchang');
-INSERT INTO `WeatherSystem_city` VALUES (29, '广州', 'guangzhou');
-INSERT INTO `WeatherSystem_city` VALUES (30, '福州', 'fuzhou');
-INSERT INTO `WeatherSystem_city` VALUES (31, '成都', 'chengdu');
-INSERT INTO `WeatherSystem_city` VALUES (32, '绵阳', 'mianyang');
-INSERT INTO `WeatherSystem_city` VALUES (33, '遂宁', 'suining');
-INSERT INTO `WeatherSystem_city` VALUES (34, '资阳', 'ziyang');
-INSERT INTO `WeatherSystem_city` VALUES (35, '眉山', 'meishan');
-INSERT INTO `WeatherSystem_city` VALUES (36, '雅安', 'yaan');
+INSERT INTO `WeatherSystem_city` VALUES (26, '盘锦', 'panjin');
 COMMIT;
 
 -- ----------------------------
@@ -286,7 +359,7 @@ CREATE TABLE `django_migrations` (
   `name` varchar(255) NOT NULL,
   `applied` datetime(6) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=23 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Table structure for django_session
@@ -304,12 +377,12 @@ CREATE TABLE `django_session` (
 -- View structure for city_sort
 -- ----------------------------
 DROP VIEW IF EXISTS `city_sort`;
-CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `city_sort` AS select `weathersystem_airquality`.`id` AS `id`,`weathersystem_airquality`.`city_name` AS `city_name`,`weathersystem_airquality`.`aqi` AS `aqi`,`weathersystem_airquality`.`pm25` AS `pm25`,`weathersystem_airquality`.`pm10` AS `pm10`,`weathersystem_airquality`.`co` AS `co`,`weathersystem_airquality`.`no2` AS `no2`,`weathersystem_airquality`.`o31h` AS `o31h`,`weathersystem_airquality`.`so2` AS `so2`,`weathersystem_airquality`.`o38h` AS `o38h` from `weathersystem_airquality` where (timestampdiff(SECOND,`weathersystem_airquality`.`record_date`,now()) <= (60 * 60)) order by `weathersystem_airquality`.`aqi` limit 6;
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `city_sort` AS select `weathersystem_airquality`.`id` AS `id`,`weathersystem_airquality`.`city_name` AS `city_name`,`weathersystem_airquality`.`aqi` AS `aqi`,`weathersystem_airquality`.`pm25` AS `pm25`,`weathersystem_airquality`.`pm10` AS `pm10`,`weathersystem_airquality`.`co` AS `co`,`weathersystem_airquality`.`no2` AS `no2`,`weathersystem_airquality`.`o3` AS `o3`,`weathersystem_airquality`.`so2` AS `so2` from `weathersystem_airquality` where (timestampdiff(SECOND,`weathersystem_airquality`.`record_date`,now()) <= (60 * 60)) order by `weathersystem_airquality`.`aqi` limit 6;
 
 -- ----------------------------
 -- View structure for recent_items
 -- ----------------------------
 DROP VIEW IF EXISTS `recent_items`;
-CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `recent_items` AS select `weathersystem_airquality`.`city_name` AS `city_name`,`weathersystem_airquality`.`aqi` AS `aqi`,`weathersystem_airquality`.`pm25` AS `pm25`,`weathersystem_airquality`.`pm10` AS `pm10`,`weathersystem_airquality`.`co` AS `co`,`weathersystem_airquality`.`no2` AS `no2`,`weathersystem_airquality`.`o31h` AS `o31h`,`weathersystem_airquality`.`so2` AS `so2`,`weathersystem_airquality`.`o38h` AS `o38h`,`weathersystem_airquality`.`record_date` AS `record_date`,`weathersystem_city`.`id` AS `city_id` from (`weathersystem_airquality` join `weathersystem_city`) where ((timestampdiff(SECOND,`weathersystem_airquality`.`record_date`,now()) <= (((60 * 60) * 24) * 3)) and (`weathersystem_city`.`city_name` = `weathersystem_airquality`.`city_name`));
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `recent_items` AS select `weathersystem_airquality`.`city_name` AS `city_name`,`weathersystem_airquality`.`aqi` AS `aqi`,`weathersystem_airquality`.`pm25` AS `pm25`,`weathersystem_airquality`.`pm10` AS `pm10`,`weathersystem_airquality`.`co` AS `co`,`weathersystem_airquality`.`no2` AS `no2`,`weathersystem_airquality`.`o3` AS `o3`,`weathersystem_airquality`.`so2` AS `so2`,`weathersystem_airquality`.`record_date` AS `record_date`,`weathersystem_city`.`id` AS `city_id` from (`weathersystem_airquality` join `weathersystem_city`) where ((timestampdiff(SECOND,`weathersystem_airquality`.`record_date`,now()) <= (((60 * 60) * 24) * 3)) and (`weathersystem_city`.`city_name` = `weathersystem_airquality`.`city_name`));
 
 SET FOREIGN_KEY_CHECKS = 1;

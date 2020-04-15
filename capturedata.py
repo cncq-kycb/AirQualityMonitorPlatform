@@ -18,6 +18,7 @@ def job():
         os.chdir('PlotUtils')
         os.system('python plot.py')
         print('Plot work finished')
+        os.chdir('..')
     except IOError:
         print('Plot work failed')
         sys.exit(0)
